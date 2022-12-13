@@ -33,6 +33,7 @@ const mostrarPrestamo = (prestamo) => {
     `
 }
 
+//EVENTO PARA EVITAR REFRESH / ALMACENAMIENTO / CREACION DE NUEVOS PRESTAMOS
 const handleSubmit = (e) => {
     e.preventDefault()
     const target = e.target;
