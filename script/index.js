@@ -22,9 +22,9 @@ const mostrarPrestamo = (prestamo) => {
         <h1>Sr/Sra ${prestamo.nombre}, esta a punto de solicitar su presamo:</h1>
       </div>
       <ul>
-      <li>Monto a solicitar: ${prestamo.monto}</li>
+      <li>Monto a solicitar: $ ${prestamo.monto}</li>
       <li>Cuotas: ${prestamo.cuotas}</li>
-      <li>Dinero a devolver: ${parseInt(prestamo.monto) + parseInt(prestamo.monto) * 10 * parseInt(prestamo.cuotas) / 100}</li>
+      <li>Dinero a devolver: $ ${parseInt(prestamo.monto) + parseInt(prestamo.monto) * 10 * parseInt(prestamo.cuotas) / 100}</li>
       </ul>
       <div>
       <input type="submit" value="Confirmar Prestamo">
