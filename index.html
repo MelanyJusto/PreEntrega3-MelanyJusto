@@ -28,7 +28,7 @@
             <!-- <<< ASIDE >>> -->
             <aside class="col-lg-4 col-lg-offset-1 col-md-6">
                 <div class=" d-flex justify-content-center align-items-center h-100">
-                    <div class="divContenedor card container d-flex flex-column align-items-center" id="card"
+                    <div id="card" class="divContenedor card container d-flex flex-column align-items-center" 
                         style="width: 50rem;">
                         <div class="divTitle card-header d-flex flex-column align-items-center">
                             <h1 class="card-title">Cotiza tu prestamo ahora!!</h1>
@@ -37,32 +37,45 @@
                         <!-- <<< FORMULARIO >>> -->
                         <form id="formularioPrestamo">
                             <div class="d-flex flex-column" style="width: 20vw;">
-                                <label for="nombre">Nombre completo</label>
+                                <label for="nombre">Nombre completo:</label>
                                 <input type="text" name="nombre" id="" placeholder="Ingrese su nombre y apellido">
-                                <label for="email">E-mail</label>
+                                <label for="direccion">Domicilio:</label>
+                                <input type="text" name="direccion" id="" placeholder="Ingrese su direccion">
+                                <label for="email">E-mail:</label>
                                 <input type="email" name="email" id="" placeholder="Ingrese su correo electronico">
-                                <label for="password">Contraseña</label>
+                                <label for="password">Contraseña:</label>
                                 <input type="password" name="contrasena" id="" placeholder="Crea una contraseña">
                             </div>
+                            <div>
+                                <span id="error" style="display: none;color:red ;">*Debe completar todos los
+                                    campos*</span>
+                            </div>
                             <br>
-                            <div class="d-flex flex-column" style="width: 30vw;">
+                            <div  class="d-flex flex-column" style="width: 30vw;">
                                 <input type="number" name="monto" id="" placeholder="Ingrese monto a solicitar">
-                                <select name="cuotas" id="">
-                                    <option selected>Elegir cantidad de cuotas</option>
-                                    <option value="3">3 cuotas (CFT 30%)</option>
-                                    <option value="6">6 cuotas (CFT 60%)</option>
-                                    <option value="12">12 cuotas (CFT 120%)</option>
+                                <select name="cuotas" id="intereses">
+                                    <option>Elegir cantidad de cuotas</option>
+                                    
                                 </select>
                                 <div>
                                     <input type="submit" value="Calcular mi prestamo" class="d-flex align-items-center">
                                 </div>
                             </div>
+                            <br>
                             <div id="nuevoPrestamo"></div>
                         </form>
                     </div>
                 </div>
             </aside>
+            
         </div>
+    </div>
+    <br>
+    <div id="divMisPrestamos">
+        <h2 class="text-center" >Mis Prestamos</h2>
+        <ul id="misPrestamos" >
+
+        </ul>
     </div>
 
 
@@ -76,6 +89,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/5f8b5b5000.js" crossorigin="anonymous"></script>
     <script src="./script/index.js"></script>
 </body>

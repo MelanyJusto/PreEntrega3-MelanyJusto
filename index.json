@@ -1,0 +1,5 @@
+[
+    {"id":3, "cuotas": "3 cuotas", "intereses": "(CFT 30%)" },
+    {"id":6, "cuotas": "6 cuotas", "intereses": "(CFT 60%)" },
+    {"id":12, "cuotas": "12 cuotas", "intereses": "(CFT 120%)"  }
+]
